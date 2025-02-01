@@ -1,0 +1,15 @@
+.grid{
+    display: grid;
+    grid-template-areas: 
+        "aside main main";
+    grid-template-columns: 350px 350px 1fr;
+}
+
+aside{
+    grid-area: aside;
+}
+
+main{
+    grid-area: main;
+    padding: 32px 16px;
+}
