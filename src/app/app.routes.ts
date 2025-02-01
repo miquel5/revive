@@ -6,7 +6,7 @@ import { MainAsideLayoutComponent } from './pages/layouts/main-aside-layout/main
 import { GeneralComponent } from './pages/layouts/general/general.component';
 import { WidgetsComponent } from './components/widgets/widgets.component';
 import { MainLayoutComponent } from './pages/layouts/main-layout/main-layout.component';
-import { CrudsComponent } from './pages/cruds/cruds.component';
+import { CrudsComponent } from './components/cruds/cruds.component';
 import { PerfileComponent } from './components/perfile/perfile.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
@@ -21,6 +21,11 @@ export const routes: Routes = [
                 path: '',
                 component: MainLayoutComponent,
                 children: [
+                    {
+                        path: '',
+                        redirectTo: 'welcome',
+                        pathMatch: 'full'
+                    },
                     {
                         title: 'ReVive | Inicio',
                         path: 'welcome',

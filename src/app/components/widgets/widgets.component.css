@@ -1,0 +1,37 @@
+.grid{
+    display: grid;
+    gap: 16px;
+    grid-template-areas: 
+        "d1 d2 d3 d4";
+}
+.grid .box{
+    padding: 16px;
+    border: 1px solid #E8E8E8;
+    background-color: #FAFAFA;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.grid .box .title{
+    font-size: 18px;
+    margin-bottom: 32px;
+    color: #A6B7B5;
+}
+.grid .box .number{
+    font-size: 32px;
+    font-weight: 500;
+    color: #36615A;
+}
+
+.grid #b1 {
+    grid-area: d1;
+}
+.grid #b2 {
+    grid-area: d2;
+}
+.grid #b3 {
+    grid-area: d3;
+}
+.grid #b4 {
+    grid-area: d4;
+}

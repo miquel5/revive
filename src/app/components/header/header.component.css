@@ -1,11 +1,11 @@
 header{
     width: 100%;
-    padding: 32px 0;
+    padding: 16px 0;
     border-bottom: 1px solid #E8E8E8;
 }
 header .center{
     width: 100%;
-    max-width: 1500px;
+    max-width: 1700px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -14,25 +14,31 @@ header .center .left{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 64px;
 }
 header .center .left a h4{
     font-size: 32px;
-    color: #000;
+    color: #36615A;
 }
 header .center .right{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-header .center .right nav{
-    
+    margin-right: 64px;
 }
 header .center .right nav ul{
     display: flex;
+    align-items: center;
     gap: 16px;
 }
-header .center .right nav ul a li{
+header .center .right nav ul li{
     color: #36615A;
     font-size: 18px;
     list-style-type: none;
+}
+header .center .right nav ul .active{
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #36615A;
+    border-radius: 8px;
 }
