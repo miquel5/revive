@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cruds',
@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './cruds.component.css'
 })
 
-export class CrudsComponent {
+export class CrudsComponent
+{
 
 }

@@ -8,3 +8,7 @@ main .center{
     padding: 0 64px;
     margin: 0 auto;
 }
+
+.display-none {
+    display: none;
+}

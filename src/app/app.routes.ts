@@ -7,8 +7,9 @@ import { GeneralComponent } from './pages/layouts/general/general.component';
 import { WidgetsComponent } from './components/widgets/widgets.component';
 import { MainLayoutComponent } from './pages/layouts/main-layout/main-layout.component';
 import { CrudsComponent } from './components/cruds/cruds.component';
-import { PerfileComponent } from './components/perfile/perfile.component';
+import { PerfileComponent } from './pages/perfile/perfile.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { SettingsComponent } from './pages/settings/settings.component';
 
 
 export const routes: Routes = [
@@ -45,6 +46,11 @@ export const routes: Routes = [
                         title: 'ReVive | Login',
                         path: 'login',
                         component: LoginComponent
+                    },
+                    {
+                        title: 'ReVive | Ajustes',
+                        path: 'settings',
+                        component: SettingsComponent
                     }
                 ]
             },
@@ -57,7 +63,19 @@ export const routes: Routes = [
                         component: WidgetsComponent
                     },
                     {
-                        path: 'crud',
+                        path: 'users',
+                        component: CrudsComponent
+                    },
+                    {
+                        path: 'objects',
+                        component: CrudsComponent
+                    },
+                    {
+                        path: 'organizations',
+                        component: CrudsComponent
+                    },
+                    {
+                        path: 'categories',
                         component: CrudsComponent
                     }
                 ]
