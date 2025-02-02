@@ -16,9 +16,8 @@ header .center .left{
     align-items: center;
     margin-left: 64px;
 }
-header .center .left a h4{
-    font-size: 32px;
-    color: #36615A;
+header .center .left img{
+    height: 50px;
 }
 header .center .right{
     display: flex;
@@ -41,4 +40,8 @@ header .center .right nav ul .active{
     color: #fff;
     background-color: #36615A;
     border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+header .center .right nav ul .active:hover {
+    background-color: #1e3630;
 }

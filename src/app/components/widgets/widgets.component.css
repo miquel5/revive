@@ -35,3 +35,13 @@
 .grid #b4 {
     grid-area: d4;
 }
+.grid #b5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: #36615A;
+    border: 1px solid #36615A;
+    color: #fff;
+    grid-area: d4;
+}

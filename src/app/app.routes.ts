@@ -10,6 +10,7 @@ import { CrudsComponent } from './components/cruds/cruds.component';
 import { PerfileComponent } from './pages/perfile/perfile.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { SettingsComponent } from './pages/settings/settings.component';
+import { ProductsComponent } from './pages/products/products.component';
 
 
 export const routes: Routes = [
@@ -18,6 +19,16 @@ export const routes: Routes = [
         title: 'ReVive',
         component: GeneralComponent,
         children: [
+            {
+                title: 'ReVive | Register',
+                path: 'register',
+                component: RegisterComponent
+            },
+            {
+                title: 'ReVive | Login',
+                path: 'login',
+                component: LoginComponent
+            },
             {
                 path: '',
                 component: MainLayoutComponent,
@@ -38,23 +49,19 @@ export const routes: Routes = [
                         component: PerfileComponent
                     },
                     {
-                        title: 'ReVive | Register',
-                        path: 'register',
-                        component: RegisterComponent
-                    },
-                    {
-                        title: 'ReVive | Login',
-                        path: 'login',
-                        component: LoginComponent
-                    },
-                    {
                         title: 'ReVive | Ajustes',
                         path: 'settings',
                         component: SettingsComponent
+                    },
+                    {
+                        title: 'ReVive | productos',
+                        path: 'products',
+                        component: ProductsComponent
                     }
                 ]
             },
             {
+                title: 'ReVive | Gestión',
                 path: '',
                 component: MainAsideLayoutComponent,
                 children: [
@@ -67,7 +74,7 @@ export const routes: Routes = [
                         component: CrudsComponent
                     },
                     {
-                        path: 'objects',
+                        path: 'warehouse',
                         component: CrudsComponent
                     },
                     {

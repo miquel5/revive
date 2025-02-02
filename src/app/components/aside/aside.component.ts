@@ -9,6 +9,8 @@ import { RouterLink } from '@angular/router';
   templateUrl: './aside.component.html',
   styleUrl: './aside.component.css'
 })
-export class AsideComponent {
+
+export class AsideComponent
+{
 
 }

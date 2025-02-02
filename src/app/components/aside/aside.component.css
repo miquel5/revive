@@ -2,16 +2,20 @@ aside{
     background-color: #FAFAFA;
     border-right: 1px solid #E8E8E8;
     height: 100%;
-    padding: 32px 32px 32px 64px;
+    padding: 32px 0 32px 64px;
 }
-aside h4{
-    font-size: 18px;
+/*aside h4{
+    font-size: 16px;
     font-weight: 500;
-    color: #888;
-    margin-bottom: 16px;
-}
+    color: #a7a7a7;
+    margin-bottom: 8px;
+}*/
 aside ul li{
     font-size: 16px;
-    padding: 8px 0 8px 16px;
+    padding: 8px 32px 8px 16px;
     list-style-type: none;
+}
+aside ul .selected {
+    background-color: #36615A;
+    color: #FFF;
 }

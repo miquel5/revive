@@ -9,6 +9,8 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './general.component.html',
   styleUrl: './general.component.css'
 })
-export class GeneralComponent {
+
+export class GeneralComponent
+{
 
 }

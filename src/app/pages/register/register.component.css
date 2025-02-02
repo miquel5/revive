@@ -1,4 +1,43 @@
 main{
     width: 100%;
-    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+}
+main .regsiter{
+    max-width: 350px;
+}
+main .regsiter h2{
+    text-align: center;
+    color: #2d4f46;
+    margin-bottom: 16px;
+}
+main .regsiter input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    color: #b4b4b4;
+    border: 1px solid #E8E8E8;
+    background-color: #FAFAFA;
+    border-radius: 5px;
+}
+main .regsiter .btn{
+    width: 100%;
+    padding: 10px;
+    background-color: #2d4f46;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.3s ease;
+}
+main .regsiter .btn:hover{
+    background-color: #1e3630;
+}
+main .regsiter .login-link{
+    margin-top: 16px;
+    display: block;
+    text-align: center;
 }

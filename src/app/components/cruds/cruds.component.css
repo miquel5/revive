@@ -3,7 +3,6 @@
 }
 table{
     width: 100%;
-    border-radius: 8px;
     border-collapse: collapse;
 }
 table th,
@@ -12,10 +11,12 @@ table td{
     text-align: left;
 }
 table th{
-    background-color: #F7F7F7;
-    border-top: 1px solid #E8E8E8;
+    background-color: #A6B7B5;
+    color: #fff;
+}
+table tr{
     border-bottom: 1px solid #E8E8E8;
 }
-table tr:nth-child(odd) {
-    background-color: #F7F7F7;
+table tr:last-child {
+    border-bottom: none;
 }
