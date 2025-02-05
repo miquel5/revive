@@ -1,0 +1,12 @@
+.map .grid{
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.map .grid .box{
+    position: relative;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    height: 250px;
+    border-radius: 8px;
+}

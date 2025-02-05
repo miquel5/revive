@@ -1,0 +1,11 @@
++ components/header: Animació per cursor + active per quan está seleccionat (He pensat en una linea)
++ components/aside: Fer que el .active funcioni bé depenent de cada pantalla (Utilitzar ngclass??)
++ componnets/overview: Tenim un componnet per mostrar titol i descripció, però necesitem mostrar-ho per les difderents pantalles.
+  Em de passar-nos al TS elsa paraàmetres i mostrar-ho depenent de la ruta? No se algo així
+  Ara ja ho faig, el probleam és si s'utilitza en +1 pantalla el component, ho fem per ruta? no podem fer un if else de 20 cruds
++ filters: crear un component unic per cada i poder fer for?
++ widgets: crear un component unic per cada i poder fer for? S'utiliza en organizador i administrador i canvia, mirar com ho fem
+
+
+
+Que posem /objects o /history a usuaris?

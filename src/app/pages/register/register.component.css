@@ -1,19 +1,19 @@
-main{
+.register{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 32px 0;
 }
-main .regsiter{
+.register .center{
     max-width: 350px;
 }
-main .regsiter h2{
+.register h2{
     text-align: center;
     color: #2d4f46;
     margin-bottom: 16px;
 }
-main .regsiter input{
+.register input{
     width: 100%;
     padding: 10px;
     margin: 8px 0;
@@ -22,7 +22,7 @@ main .regsiter input{
     background-color: #FAFAFA;
     border-radius: 5px;
 }
-main .regsiter .btn{
+.register .btn{
     width: 100%;
     padding: 10px;
     background-color: #2d4f46;
@@ -33,10 +33,10 @@ main .regsiter .btn{
     margin-top: 8px;
     transition: background-color 0.3s ease;
 }
-main .regsiter .btn:hover{
+.register .btn:hover{
     background-color: #1e3630;
 }
-main .regsiter .login-link{
+.register .login-link{
     margin-top: 16px;
     display: block;
     text-align: center;

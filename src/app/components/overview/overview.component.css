@@ -1,0 +1,13 @@
+.overview{
+    width: 100%;
+    margin-bottom: 32px;
+}
+.overview h2{
+    color: #36615A;
+    margin-bottom: 8px;
+}
+.overview h4{
+    font-weight: 100;
+    font-size: 18px;
+    color: #A6B7B5;
+}
