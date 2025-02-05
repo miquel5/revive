@@ -11,7 +11,7 @@ import { PerfileComponent } from './pages/perfile/perfile.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { ProductsComponent } from './pages/products/products.component';
-
+import { HomeComponent } from './pages/home/home.component';
 
 export const routes: Routes = [
     {
@@ -57,6 +57,11 @@ export const routes: Routes = [
                         title: 'ReVive | productos',
                         path: 'products',
                         component: ProductsComponent
+                    },
+                    {
+                        title: 'ReVive | Inicio',
+                        path: 'home',
+                        component: HomeComponent
                     }
                 ]
             },
