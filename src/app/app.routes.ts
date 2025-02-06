@@ -9,11 +9,11 @@ import { MainLayoutComponent } from './pages/layouts/main-layout/main-layout.com
 import { CrudComponent } from './components/crud/crud.component';
 import { PerfileComponent } from './pages/perfile/perfile.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { SettingsComponent } from './pages/settings/settings.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MapComponent } from './pages/map/map.component';
 import { ObjectsComponent } from './pages/objects/objects.component';
 import { AboutComponent } from './pages/about/about.component';
+import { HistoryComponent } from './pages/history/history.component';
 
 export const routes: Routes = [
     {
@@ -51,14 +51,14 @@ export const routes: Routes = [
                         component: PerfileComponent
                     },
                     {
-                        title: 'ReVive | Ajustes',
-                        path: 'settings',
-                        component: SettingsComponent
-                    },
-                    {
                         title: 'ReVive | productos',
                         path: 'objects',
                         component: ObjectsComponent
+                    },
+                    {
+                        title: 'ReVive | Historial',
+                        path: 'history',
+                        component: HistoryComponent
                     },
                     {
                         title: 'ReVive | Inicio',

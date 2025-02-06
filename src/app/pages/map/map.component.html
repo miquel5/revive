@@ -2,35 +2,13 @@
 <app-filters/>
 <section class="map">
     <div class="grid">
-        <a routerLink="/">
-            <div class="box">
-                
-            </div>
-        </a>
-        <a routerLink="/">
-            <div class="box">
-                
-            </div>
-        </a>
-        <a routerLink="/">
-            <div class="box">
-                
-            </div>
-        </a>
-        <a routerLink="/">
-            <div class="box">
-                
-            </div>
-        </a>
-        <a routerLink="/">
-            <div class="box">
-                
-            </div>
-        </a>
-        <a routerLink="/">
-            <div class="box">
-                
-            </div>
-        </a>
+        @for (location of locations; let index = $index; track index)
+        {
+            <a routerLink="/">
+                <div class="box">
+                    
+                </div>
+            </a>
+        }
     </div>
 </section>
