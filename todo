@@ -5,7 +5,7 @@
   Ara ja ho faig, el probleam és si s'utilitza en +1 pantalla el component, ho fem per ruta? no podem fer un if else de 20 cruds
 + filters: crear un component unic per cada i poder fer for?
 + widgets: crear un component unic per cada i poder fer for? S'utiliza en organizador i administrador i canvia, mirar com ho fem
-
++ Al footer posar un script que posi RE-VIVE RE-CICLA i vagi canviant (Si en trobem un altre doncs més)
 
 
 Que posem /objects o /history a usuaris?
