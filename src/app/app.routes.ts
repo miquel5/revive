@@ -27,6 +27,11 @@ export const routes: Routes = [
         component: WelcomeComponent
     },
     {
+        title: 'ReVive | Sobre nosotros',
+        path: 'about',
+        component: AboutComponent
+    },
+    {
         path: '',
         title: 'ReVive',
         component: GeneralComponent,
@@ -69,11 +74,6 @@ export const routes: Routes = [
                         title: 'ReVive | Ubicaciones',
                         path: 'map',
                         component: MapComponent
-                    },
-                    {
-                        title: 'ReVive | Sobre nosotros',
-                        path: 'about',
-                        component: AboutComponent
                     }
                 ]
             },

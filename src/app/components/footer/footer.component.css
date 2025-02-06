@@ -1,7 +1,7 @@
 footer{
     width: 100%;
     padding: 32px 0;
-    margin-top: 128px;
+    margin-top: 64px;
 }
 footer .items{
     max-width: 1700px;
@@ -33,14 +33,13 @@ footer .items .bottom{
     display: flex;
     justify-content: space-between;
     gap: 64px;
-    padding: 8px;
 }
 footer .items .left{
     max-width: 300px;
 }
 footer .items .left img{
-    height: 50px;
-    margin-bottom: 16px;
+    height: 45px;
+    margin-bottom: 8px;
 }
 footer .items .left p{
     color: #666;

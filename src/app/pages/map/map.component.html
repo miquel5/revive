@@ -4,9 +4,13 @@
     <div class="grid">
         @for (location of locations; let index = $index; track index)
         {
-            <a routerLink="/">
+            <a routerLink="{{ location.url }}">
                 <div class="box">
-                    
+                    <img [src]="location.image">
+                    <div class="info">
+                        <span class="title">{{ location.title }}</span>
+                        <span class="subtitle">{{ location.subtitle }}</span>
+                    </div>
                 </div>
             </a>
         }
