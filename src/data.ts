@@ -16,3 +16,41 @@ export const OBJECTS = [
     { id: 6, url: '/', title: 'Object 6', subtitle: 'Description', points: '20', image: '' },
     { id: 7, url: '/', title: 'Object 7', subtitle: 'Description', points: '51', image: '' }
 ];
+
+export const CRUD_DATA = {
+    '/users': {
+        columns: ['ID', 'Nombre', 'Email', 'Rol'],
+        data: [
+            { id: 1, name: 'Usuario 1', email: 'user1@email.com', role: 'Admin' },
+            { id: 2, name: 'Usuario 2', email: 'user2@email.com', role: 'User' },
+        ]
+    },
+    '/history': {
+        columns: ['ID', 'Fecha', 'Objeto', 'Usuario'],
+        data: [
+            { id: 1, date: '2024-03-20', object: 'Objeto 1', user: 'Usuario 1' },
+            { id: 2, date: '2024-03-21', object: 'Objeto 2', user: 'Usuario 2' },
+        ]
+    },
+    '/warehouse': {
+        columns: ['ID', 'Nombre', 'Stock', 'Categoría'],
+        data: [
+            { id: 1, name: 'Producto 1', stock: 10, category: 'Cat 1' },
+            { id: 2, name: 'Producto 2', stock: 20, category: 'Cat 2' },
+        ]
+    },
+    '/organizations': {
+        columns: ['ID', 'Nombre', 'Dirección', 'Teléfono'],
+        data: [
+            { id: 1, name: 'Org 1', address: 'Dir 1', phone: '123456789' },
+            { id: 2, name: 'Org 2', address: 'Dir 2', phone: '987654321' },
+        ]
+    },
+    '/categories': {
+        columns: ['ID', 'Nombre', 'Descripción'],
+        data: [
+            { id: 1, name: 'Cat 1', description: 'Desc 1' },
+            { id: 2, name: 'Cat 2', description: 'Desc 2' },
+        ]
+    }
+};

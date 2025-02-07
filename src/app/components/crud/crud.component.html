@@ -2,19 +2,19 @@
 <app-filters/>
 <table>
     <tr>
-        <th>Id</th>
+        @for (column of currentColumns; track column)
+        {
+            <th>{{column}}</th>
+        }
     </tr>
-    <tr>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td>4</td>
-    </tr>
+    @for (row of currentData; track row.id)
+    {
+        <tr>
+            @for (column of currentColumns; track column)
+            {
+                <td>{{row[column.toLowerCase()]}}</td>
+            }
+        </tr>
+    }
 </table>
 

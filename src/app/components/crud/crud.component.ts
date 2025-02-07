@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FiltersComponent } from "../filters/filters.component";
 import { OverviewComponent } from "../overview/overview.component";
 import { Router } from '@angular/router';
+import { CRUD_DATA } from '../../../data';
 
 @Component({
   selector: 'app-crud',
@@ -15,6 +16,8 @@ export class CrudComponent implements OnInit
 {
     title: string = ' ';
     description: string = ' ';
+    currentColumns: string[] = [];
+    currentData: any[] = [];
   
     private crudConfigs = [
         ['/users', 'Gestión de usuarios', 'Administra los usuarios del sistema'],
@@ -29,6 +32,7 @@ export class CrudComponent implements OnInit
     ngOnInit()
     {
         this.setTitleAndDescription();
+        this.setCurrentData();
     }
   
     // Afegir titol i descripció depenent de cada ruta
@@ -40,6 +44,19 @@ export class CrudComponent implements OnInit
         if (config)
         {
             [, this.title, this.description] = config;
+        }
+    }
+
+    // Informació CRUD
+    private setCurrentData()
+    {
+        const currentRoute = this.router.url;
+        const routeData = CRUD_DATA[currentRoute as keyof typeof CRUD_DATA];
+        
+        if (routeData)
+        {
+            this.currentColumns = routeData.columns;
+            this.currentData = routeData.data;
         }
     }
 }
