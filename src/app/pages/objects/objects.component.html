@@ -1,6 +1,19 @@
-<aside>
-    <p>Aside objects</p>
-</aside>
+<app-overview [title]="title" [description]="description"/>
 <section class="objects">
-    <p>objects works!</p>
+    <aside>
+        <p>Aside objects</p>
+    </aside>
+    <div class="filter-grid">
+        <app-filters/>
+        <div class="grid">
+            @for (object of objects; let index = $index; track index)
+            {
+                <div class="box">
+                    <span class="title">{{ object.title }}</span>
+                    <span class="subtitle">{{ object.subtitle }}</span>
+                    <span class="points">Puntos {{ object.points }}</span>
+                </div>
+            }
+        </div>
+    </div>
 </section>

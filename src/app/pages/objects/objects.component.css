@@ -1,0 +1,22 @@
+.objects{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 332px 1fr;
+}
+.objects aside{
+    height: 100%;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    padding: 8px;
+    margin-right: 32px;
+}
+.objects .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+.objects .grid .box{
+    background-color: #f7f7f7;
+    padding: 8px;
+    height: 300px;
+}

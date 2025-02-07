@@ -14,6 +14,7 @@ import { MapComponent } from './pages/map/map.component';
 import { ObjectsComponent } from './pages/objects/objects.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HistoryComponent } from './pages/history/history.component';
+import { ManagementComponent } from './pages/management/management.component';
 
 export const routes: Routes = [
     {
@@ -101,6 +102,10 @@ export const routes: Routes = [
                     {
                         path: 'categories',
                         component: CrudComponent
+                    },
+                    {
+                        path: 'managment',
+                        component: ManagementComponent
                     }
                 ]
             },

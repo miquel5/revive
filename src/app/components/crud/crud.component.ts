@@ -31,6 +31,7 @@ export class CrudComponent implements OnInit
         this.setTitleAndDescription();
     }
   
+    // Afegir titol i descripció depenent de cada ruta
     private setTitleAndDescription()
     {
         const currentRoute = this.router.url;
