@@ -59,5 +59,34 @@ export class CrudComponent implements OnInit
             this.currentData = routeData.data;
         }
     }
+
+    getPropertyValue(row: any, column: string): string {
+        const propertyMap: { [key: string]: string } = {
+            'ID': 'id',
+            'Organización': 'organizacion',
+            'Ciudad': 'ciudad',
+            'Vendedor': 'vendedor',
+            'Comprador': 'comprador',
+            'Puntos': 'puntos',
+            'Nombre': 'nombre',
+            'Descripción': 'descripcion',
+            'Subcategoria': 'subcategoria',
+            'Peso': 'peso',
+            'Tamaño': 'tamano',
+            'Estado': 'estado',
+            'Email': 'email',
+            'Rol': 'rol',
+            'Fecha': 'fecha',
+            'Objeto': 'objeto',
+            'Usuario': 'usuario',
+            'Stock': 'stock',
+            'Categoría': 'categoria',
+            'Dirección': 'direccion',
+            'Telefono': 'telefono'
+        };
+        
+        const property = propertyMap[column] || column.toLowerCase();
+        return row[property];
+    }
 }
   

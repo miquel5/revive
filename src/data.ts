@@ -19,38 +19,38 @@ export const OBJECTS = [
 
 export const CRUD_DATA = {
     '/users': {
-        columns: ['ID', 'Nombre', 'Email', 'Rol'],
+        columns: ['ID', 'Usuario', 'Nombre', 'Primer apellido', 'Segundo apellido', 'Teléfono', 'Rol', 'Estado'],
         data: [
-            { id: 1, name: 'Usuario 1', email: 'user1@email.com', role: 'Admin' },
-            { id: 2, name: 'Usuario 2', email: 'user2@email.com', role: 'User' },
+            { id: 1, username: 'user1', name: 'Pedro', surname1: 'surname1', surname2: 'surname2', phone: '987563452', rol: 'Admin', status: 'Activo' },
+            { id: 2, username: 'user2', name: 'Marta', surname1: 'surname2', surname2: 'surname2', phone: '987563452', rol: 'User', status: 'Inactivo' },
         ]
     },
     '/history': {
         columns: ['ID', 'Fecha', 'Objeto', 'Usuario'],
         data: [
-            { id: 1, date: '2024-03-20', object: 'Objeto 1', user: 'Usuario 1' },
-            { id: 2, date: '2024-03-21', object: 'Objeto 2', user: 'Usuario 2' },
+            { id: 1, fecha: '2024-03-20', objeto: 'Objeto 1', usuario: 'Usuario 1' },
+            { id: 2, fecha: '2024-03-21', objeto: 'Objeto 2', usuario: 'Usuario 2' },
         ]
     },
     '/warehouse': {
-        columns: ['ID', 'Nombre', 'Stock', 'Categoría'],
+        columns: ['ID', 'Nombre', 'Organización', 'Ciudad', 'Vendedor', 'Comprador', 'Puntos',  'Subcategoria', 'Peso', 'Tamaño', 'Estado'],
         data: [
-            { id: 1, name: 'Producto 1', stock: 10, category: 'Cat 1' },
-            { id: 2, name: 'Producto 2', stock: 20, category: 'Cat 2' },
+            { id: 1, nombre: 'Producto 1', organizacion: 'Org 1', ciudad: 'Barcelona', vendedor: 'Juan Pérez', comprador: 'María García', puntos: '100',  subcategoria: 'Sub 1', peso: '10kg', tamano: 'Grande', estado: 'Disponible' },
+            { id: 2, nombre: 'Producto 2', organizacion: 'Org 2', ciudad: 'Madrid', vendedor: 'Ana López', comprador: 'Pedro Sánchez', puntos: '150', subcategoria: 'Sub 2', peso: '5kg', tamano: 'Mediano', estado: 'Disponible' }
         ]
     },
     '/organizations': {
-        columns: ['ID', 'Nombre', 'Dirección', 'Teléfono'],
+        columns: ['ID', 'Nombre', 'Dirección', 'Telefono'],
         data: [
-            { id: 1, name: 'Org 1', address: 'Dir 1', phone: '123456789' },
-            { id: 2, name: 'Org 2', address: 'Dir 2', phone: '987654321' },
+            { id: 1, nombre: 'Org 1', direccion: 'Dir 1', telefono: '123456789' },
+            { id: 2, nombre: 'Org 2', direccion: 'Dir 2', telefono: '987654321' },
         ]
     },
     '/categories': {
         columns: ['ID', 'Nombre', 'Descripción'],
         data: [
-            { id: 1, name: 'Cat 1', description: 'Desc 1' },
-            { id: 2, name: 'Cat 2', description: 'Desc 2' },
+            { id: 1, nombre: 'Cat 1', descripcion: 'Desc 1' },
+            { id: 2, nombre: 'Cat 2', descripcion: 'Desc 2' },
         ]
     }
 };

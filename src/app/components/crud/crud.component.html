@@ -12,7 +12,7 @@
         <tr>
             @for (column of currentColumns; track column)
             {
-                <td>{{row[column.toLowerCase()]}}</td>
+                <td>{{getPropertyValue(row, column)}}</td>
             }
         </tr>
     }
