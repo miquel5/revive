@@ -1,20 +1,18 @@
 <app-overview [title]="title" [description]="description"/>
 <app-filters/>
 <table>
-    <tr>
-        @for (column of currentColumns; track column)
-        {
-            <th>{{column}}</th>
-        }
-    </tr>
-    @for (row of currentData; track row.id)
-    {
+    <thead>
         <tr>
             @for (column of currentColumns; track column)
             {
-                <td>{{getPropertyValue(row, column)}}</td>
+                <th>{{ column }}</th>
             }
         </tr>
-    }
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+        </tr>
+    </tbody>
 </table>
 

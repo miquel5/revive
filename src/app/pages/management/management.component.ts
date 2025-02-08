@@ -12,5 +12,5 @@ import { OverviewComponent } from "../../components/overview/overview.component"
 export class ManagementComponent
 {
     title: string = 'Gestionar aplicación';
-    description: string = 'Panel administrativo para gestionar la aplicación';
+    description: string = 'Activa y modifica funcionalidades del programa';
 }
