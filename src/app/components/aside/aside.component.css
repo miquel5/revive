@@ -5,18 +5,25 @@ aside{
     height: 100%;
     padding: 32px 0 32px 64px;
 }
-/*aside h4{
-    font-size: 16px;
-    font-weight: 500;
-    color: #a7a7a7;
-    margin-bottom: 8px;
-}*/
-aside ul li{
-    font-size: 16px;
-    padding: 8px 32px 8px 16px;
-    list-style-type: none;
+aside ul{
+
 }
-aside ul .selected {
-    background-color: #36615A;
-    color: #FFF;
+aside ul .box{
+    padding: 12px 16px 12px 16px;
+    margin: 0 16px 8px 0;
+    display: flex;
+    list-style-type: none;
+    border-radius: 8px;
+    transition: background-color 0.1s ease;
+}
+aside ul .box:hover{
+    background-color: #E8E8E8;
+}
+aside ul .box svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}
+aside ul .box .li{
+    font-size: 16px;
 }

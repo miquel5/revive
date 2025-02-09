@@ -4,7 +4,7 @@ footer{
     margin-top: 64px;
 }
 footer .items{
-    max-width: 1700px;
+    max-width: 1900px;
     padding: 0 64px;
     margin: 0 auto;
 }
@@ -32,6 +32,7 @@ footer .items .top span{
 footer .items .bottom{
     display: flex;
     justify-content: space-between;
+    padding: 8px;
     gap: 64px;
 }
 footer .items .left{
@@ -85,6 +86,6 @@ footer .items .lower{
     width: 100%;
     margin-top: 32px;
     border-radius: 8px;
-    padding: 8px;
+    padding: 12px 8px;
     background-color: #f0f0f0;
 }
