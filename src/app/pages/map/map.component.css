@@ -23,13 +23,18 @@
 }
 .map .grid .box .info{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     z-index: 2;
 }
 .map .grid .box .info .title{
     color: #FFF;
     font-size: 30px;
+    text-align: center;
 }
 .map .grid .box .info .subtitle{
-    color: #ddd;
+    color: #f0f0f0;
     font-size: 18px;
+    text-align: center;
 }

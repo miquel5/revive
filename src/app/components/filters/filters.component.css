@@ -6,21 +6,3 @@
     display: flex;
     gap: 8px;
 }
-.filters form input{
-    border: 1px solid #E8E8E8;
-    background-color: #F7F7F7;
-    border-radius: 8px;
-    padding: 8px;
-}
-.filters form button{
-    background-color: #36615A;
-    border: none;
-    border-radius: 8px;
-    padding: 8px 16px;
-    cursor: pointer;
-    color: #FFF;
-    transition: background-color 0.3s ease;
-}
-.filters form button:hover{
-    background-color: #1e3630;
-}

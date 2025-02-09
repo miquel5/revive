@@ -1,12 +1,6 @@
 aside{
-    background-color: #FAFAFA;
-    border-right: 1px solid #E8E8E8;
-    border-bottom: 1px solid #E8E8E8;
     height: 100%;
     padding: 32px 0 32px 64px;
-}
-aside ul{
-
 }
 aside ul .box{
     padding: 12px 16px 12px 16px;
@@ -14,10 +8,10 @@ aside ul .box{
     display: flex;
     list-style-type: none;
     border-radius: 8px;
-    transition: background-color 0.1s ease;
+    color: #000;
 }
 aside ul .box:hover{
-    background-color: #E8E8E8;
+    background-color: #F9F9F9;
 }
 aside ul .box svg{
     width: 20px;

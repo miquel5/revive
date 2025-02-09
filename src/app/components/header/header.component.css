@@ -14,7 +14,8 @@ header .center .left{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 64px;
+    padding-left: 64px;
+    width: 350px;
 }
 header .center .left img{
     height: 50px;
@@ -23,7 +24,7 @@ header .center .right{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 64px;
+    padding-right: 64px;
 }
 header .center .right nav ul{
     display: flex;

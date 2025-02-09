@@ -6,8 +6,7 @@
 }
 .grid .box{
     padding: 16px;
-    border: 1px solid #E8E8E8;
-    background-color: #FAFAFA;
+    background-color: #f9f9f9;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
