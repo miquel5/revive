@@ -19,7 +19,7 @@
     gap: 8px;
 }
 .register form input{
-    max-width: 350px;
+    width: 300px;
 }
 .register .login-link{
     margin-top: 16px;
